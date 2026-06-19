@@ -1,0 +1,80 @@
+baseURL = "https://polar-n0de.github.io/"
+locale = "en-us"
+title = "polar-n0de // runbooks"
+theme = "mainroad"
+paginate = 10
+enableRobotsTXT = true
+
+#[author]
+   # name = "polar-n0de"
+    #bio = "Linux Systems Administrator | Zabbix | Proxmox | Automation"
+    #avatar = "img/avatar.png"
+
+
+
+[params]
+  subtitle = "Linux • Monitoring • Infrastructure Automation"
+  description = "Real infrastructure problems and how I solved them — Zabbix, Proxmox, Bacula, automation."
+  customJS = ["js/custom.js"]
+  customCSS = ["css/custom.css"]
+  opengraph = true
+  twitter_cards = false
+  readmore = true
+  authorbox = true
+  toc = true
+  pager = true
+  post_meta = ["date", "categories", "translations"]
+
+[params.author]
+  name = "polar-n0de"
+  bio = "Linux Systems Administrator | Zabbix • Proxmox • Automation. Documenting real infrastructure problems and how I solved them."
+  avatar = "img/avatar.png"
+
+  [params.style.vars]
+  highlightColor = "#3b9dd9"
+
+  [params.logo]
+    image = "img/avatar.png"
+    title = "polar-n0de"
+    subtitle = "// runbooks"
+
+  [params.sidebar]
+    home = "right"
+    list = "right"
+    single = "right"
+    widgets = ["search", "recent", "categories", "taglist"]
+
+  [params.widgets]
+    recent_num = 5
+    tags_counter = true
+
+[params.widgets.social]
+  linkedin = "radu-adrian-pintea"
+  github = "polar-n0de"
+  email = "polar-n0de@pm.me"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
